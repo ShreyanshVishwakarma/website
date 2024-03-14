@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-image: url('https://free4kwallpapers.com/uploads/originals/2015/10/11/well-furnished-office-wallpaper.jpg');
+            background-size: cover;
+            color: white;
+            margin: 0;
+            padding: 0;
+        }
+    
+        h1 {
+            background-color: rgba(59, 54, 54, 0.819);
+            padding: 10px;
+            text-align: center;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.977);
+        }
+    
+        .form {
+            border: 1px solid;
+            margin: auto;
+            width: 60%;
+            padding: 50px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.977);
+            background-color: rgba(0, 0, 0, 0);
+            backdrop-filter: blur(10px);
+            border-radius: 4ch;
+        }
+    
+        input[type="text"],
+        input[type="email"],
+        input[type="submit"] {
+            height: 35px;
+            width: 100%;
+            background-color: rgba(255, 255, 255, 0.07);
+            border-radius: 3px;
+            padding: 0 10px;
+        }
+    
+        #submit:hover {
+            background-color: rgb(76, 76, 228);
+        }
+    </style>
+    
+</head>
+
+<body style="background-color: antiquewhite;">
+
+    <h1 style="text-align: center;">Googlee is Hiring !!</h1><br><br>
+    <div class="form">
+        <form action="abs.php">
+
+
+            <label for="fname">First Name:</label>
+            <input type="text" id="fname" placeholder="First Name"><br><br>
+            <label for="lname">Last Name:</label>
+            <input type="text" id="lname" placeholder="Last Name"><br><br>
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" placeholder="example@example.com"><br><br>
+            <label for="character">In which languages do you have professional proficiency?</label>
+            <select name="select" id="language">
+                <option value="English">English</option>
+                <option value="Hindi">Hindi</option>
+                <option value="Russian">Russian</option>
+            </select><br><br>
+
+
+            <p>Which job position do you want to apply for?</p>
+
+            <input type="radio" id="Frontend developer" name="fav_language" value="Frontend developer">
+            <label for="Frontend developer">Frontend developer</label><br>
+            <input type="radio" id="Backend developer" name="fav_language" value="Backend developer">
+            <label for="Backend developer">Backend developer</label><br>
+            <input type="radio" id="Fullstack developer" name="fav_language" value="Fullstack developer">
+            <label for="Fullstack developer">Fullstack developer</label><br><br>
+
+            <label for="whyJob">Why do you want this job?</label><br>
+            <textarea id="whyJob" rows="4" cols="50" placeholder="I am passionate about..."></textarea><br><br>
+
+            <label>Skills:</label><br>
+            <input type="checkbox" id="skill1" name="skills" value="JavaScript">
+            <label for="skill1">JavaScript</label><br>
+            <input type="checkbox" id="skill2" name="skills" value="Python">
+            <label for="skill2">Python</label><br>
+            <input type="checkbox" id="skill3" name="skills" value="HTML/CSS">
+            <label for="skill3">HTML/CSS</label><br>
+            <input type="checkbox" id="skill4" name="skills" value="React">
+            <label for="skill4">React</label><br>
+            <input type="checkbox" id="skill5" name="skills" value="AI/ML">
+            <label for="skill1">AI/ML</label><br><br>
+
+            <label for="resume">Upload Resume:</label>
+            <input type="file" id="resume"><br><br>
+
+            <input type="submit" id="submit" value="Submit">
+
+        </form>
+    </div>
+</body>
+
+</html>
